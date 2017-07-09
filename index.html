@@ -4,9 +4,121 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Product Landing Page</title>
 </head>
 <body>
+    <style>
+        #first-header{
+            margin-top:10%;    
+        }
+        @media(max-width:500px){
+            .container{
+                background-color:#921515;
+            }
+        }
+    </style>
     
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <!--container for navbar it is inside the navbar to only constrict the contents of it, not the actual bar-->
+    <div class="container">   
+        <!--logo on the navigation bar-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#section-one" class="navbar-brand">League-news</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <!--actual navigation links on the navbar-->
+            <ul class="nav navbar-nav">
+                <li><a href="#section-two">About</a></li>
+            </ul>
+            <!--right side of navbar-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#section-three">Contact us!</a></li>
+            </ul>
+        </div>
+    </div>     
+    </nav>
+    <div class="container" id="section-one">
+        <h1 class="text-center" id="first-header">The new ADC</h1>
+        <article>
+            <div class="jumbotron">
+                <img src="http://media.wwg.com/2017/04/xayah-206152-1280x0.jpg" class="col-md-4 col-xs-6">
+                <p>Xayah is a very different kind of adc, she does not rely on her auto attacks as heavily as other
+                adc's, her ability to burst other adc's down can be very useful against a team of squishy champions.
+                However, that doesn't effect her ability to kill Tanks. With armor penetration, even tanks are not a match 
+                for her. It is very important to be careful though, because her range is the shortest range of an adc, her
+                positioning is essential. Her attack speed is very low as well. She benefits a lot from critical chance and attack
+                speed items.
+                
+                </p>    
+            </div>
+        </article>
+        <div class="jumbotron">
+            <h2>Some of the best Xayah plays</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mIVZJwzFOOU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="section-two">
+        <h1 class="text center">About League-news</h1>
+        <div class="jumbotron">
+            <img src="https://i.ytimg.com/vi/5lx_UCcK7Yo/maxresdefault.jpg" class="col-md-12 col-xs-8">
+            <article>
+                <p>Our mission is to provide you with everything new that is happening within the league community!
+                The best ticks and trips to climb up the ranking ladder, and improve your gameplay. League is the perfect way 
+                to relax after a long day of work. You should work, but also play hard. We help you do just that!
+                We strive to make the league community more friendly, since we know that kids play that game as well
+                and shouldn't be exposed to fool language and unreasonable anger when failing. Instead we want
+                players to help their teammates out and encourage them all the way to make league a friendly environment for everyone.</p>
+            </article>
+        </div>
+        <div id="section-three">
+            <div class="well">
+                <h1>Contact us</h1>
+                <p>Your Opinion is very important, please send us any suggestions or feedback you may have!</p>
+                <form class="form-horizontal" action="https://www.freecodecamp.com/email-submit" method="POST">
+                    <div class="form-group">
+                        <label for="username" class="col-sm-2 control-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="username" placeholder="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment" class="col-sm-2 control-label">Your Comment!</label>
+                        <div class="col-sm-10">
+                            <input type="textarea" class="form-control"rows="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <btn href="https://www.freecodecamp.com/email-submit" class="btn-default">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+    </div>
+    <footer class="myfooter well">
+		<p>Posted by: League news</p>
+		<p>Contact information: <a href="mailto:nafissa_92@hotmail.com">league-news@riot.com</a>.</p>
+	</footer>
+
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
 </body>
 </html>
